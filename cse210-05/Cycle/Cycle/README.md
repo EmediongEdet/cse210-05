@@ -1,5 +1,5 @@
 # Cycle
-- Doug Bradbury - said, "The best rides are the ones where you bite off much more than you can chew,
+-Doug Bradbury- said, "The best rides are the ones where you bite off much more than you can chew,
 and live through it."       
 
 Cycle is a game where two players can participate, the players try to cut each other off using cycles that leave a trail behind them.
