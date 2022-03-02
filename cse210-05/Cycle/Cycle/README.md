@@ -1,6 +1,8 @@
 # Cycle
 The best rides are the ones where you bite off much more than you can chew,
-and live through it.       - Doug Bradbury -
+and live through it.       
+
+- Doug Bradbury -
 
 Cycle is a game where two players can participate, the players try to cut each other off using cycles that leave a trail behind them.
 The game guide and play are as follows:
