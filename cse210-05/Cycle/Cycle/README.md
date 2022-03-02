@@ -53,6 +53,6 @@ root                    (project root folder)
 * McNeill Chimuka Chimuka
 * Miguel Secades Garcia
 
-## TODO: Add your name and email here
+## Mails
 ---
 Emediong Henry Edet, Email: Blessededet94@gmail.com
