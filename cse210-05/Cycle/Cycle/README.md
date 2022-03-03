@@ -50,9 +50,10 @@ root                    (project root folder)
 * Miguel Angel Condori
 * Emediong Henry Edet
 * Mary Ann Overson
-* McNeill Chimuka Chimuka
+* McNeill Chimuka
 * Miguel Secades Garcia
 
 ## Mails
 ---
 Emediong Henry Edet, Email: Blessededet94@gmail.com
+McNeill Chimuka, Email: mackiechimuka@gmail.com 
