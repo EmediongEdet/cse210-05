@@ -53,7 +53,8 @@ root                    (project root folder)
 * McNeill Chimuka
 * Miguel Secades Garcia
 
-## Mails
+## Emails
 ---
 Emediong Henry Edet, Email: Blessededet94@gmail.com
 McNeill Chimuka, Email: mackiechimuka@gmail.com 
+Mary Ann Overson, Email: ove21001@byui.edu
