@@ -59,6 +59,7 @@ class Cast:
         Returns:
             List: The first actor in the group.
         """
+        
         result = None
         if group in self._actors.keys():
             result = self._actors[group][0]
