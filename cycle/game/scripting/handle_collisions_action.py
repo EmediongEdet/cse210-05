@@ -73,14 +73,10 @@ class HandleCollisionsAction(Action):
         for segment in player1_segments:
             if player2_head.get_position().equals(segment.get_position()):
                 self._is_game_over = True
-            if player1_head.get_position().equals(segment.get_position()):
-                self._is_game_over = True
 
         # Player 2 segment handling
         for segment in player2_segments:
             if player1_head.get_position().equals(segment.get_position()):
-                self._is_game_over = True
-            if player2_head.get_position().equals(segment.get_position()):
                 self._is_game_over = True
 
     def _handle_player_collision(self, cast):
