@@ -12,10 +12,17 @@ class Snake(Actor):
     Attributes:
         _points (int): The number of points the food is worth.
     """
+   
     def __init__(self):
         super().__init__()
         self._segments = []
         self._prepare_body()
+        
+
+    def start_growing(self):
+        self.grow_tail(1)
+        
+    
 
     def get_segments(self):
         return self._segments

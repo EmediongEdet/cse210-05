@@ -1,3 +1,4 @@
+
 import constants
 from game.casting.actor import Actor
 from game.scripting.action import Action
@@ -25,11 +26,16 @@ class HandleCollisionsAction(Action):
             cast (Cast): The cast of Actors in the game.
             script (Script): The script of Actions in the game.
         """
+        player1 = cast.get_first_actor("snake")
+        player2 = cast.get_first_actor("snake2")
         if not self._is_game_over:
             # self._handle_food_collision(cast)
             self._handle_segment_collision(cast)
             # self._handle_player_collision(cast)
             self._handle_game_over(cast)
+            player1.start_growing()
+            player2.start_growing()
+     
 
     # def _handle_food_collision(self, cast):
     #     """Updates the score nd moves the food if the snake collides with the food.

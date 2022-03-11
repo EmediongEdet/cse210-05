@@ -47,7 +47,7 @@ class Snake2(Snake):
             segment.set_position(position)
             segment.set_velocity(velocity)
             segment.set_text("#")
-            segment.set_color(constants.GREEN)
+            segment.set_color(constants.YELLOW)
             self._segments.append(segment)
 
     def turn_head(self, velocity):
