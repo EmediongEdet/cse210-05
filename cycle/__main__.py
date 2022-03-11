@@ -1,13 +1,11 @@
 import constants
 
 from game.casting.cast import Cast
-# from game.casting.food import Food
 from game.casting.score import Score
-from game.casting.snake import Snake
-from game.casting.snake2 import Snake2
+from game.casting.cycle import Cycle
+from game.casting.cycle2 import Cycle2
 from game.scripting.script import Script
 from game.scripting.control_actors_action import ControlActorsAction
-# from game.scripting.control_snake2_action import ControlSnake2Action
 from game.scripting.move_actors_action import MoveActorsAction
 from game.scripting.handle_collisions_action import HandleCollisionsAction
 from game.scripting.draw_actors_action import DrawActorsAction
@@ -22,9 +20,8 @@ def main():
     
     # create the cast
     cast = Cast()
-    # cast.add_actor("foods", Food())
-    cast.add_actor("snake", Snake())
-    cast.add_actor("snake2", Snake2())
+    cast.add_actor("cycle", Cycle())
+    cast.add_actor("cycle2", Cycle2())
     player1_score = Score("Player One")
     player2_score = Score("Player Two")
     player1_score.set_position(Point(10, 10))
@@ -39,10 +36,8 @@ def main():
 
     script = Script()
     script.add_action("input", ControlActorsAction(keyboard_service, handle_collision))
-    # script.add_action("input", ControlSnake2Action(keyboard_service))
     script.add_action("update", MoveActorsAction())
     script.add_action("update", handle_collision)
-    # script.add_action("update", GrowTrailAction)
     script.add_action("output", DrawActorsAction(video_service))
     
     director = Director(video_service)

@@ -3,11 +3,11 @@ from game.scripting.action import Action
 from game.shared.point import Point
 
 
-class ControlSnake2Action(Action):
+class ControlCycle2Action(Action):
     """
-    An input action that controls the snake.
+    An input action that controls the cycle.
     
-    The responsibility of ControlActorsAction is to get the direction and move the snake's head.
+    The responsibility of ControlActorsAction is to get the direction and move the cycle's head.
 
     Attributes:
         _keyboard_service (KeyboardService): An instance of KeyboardService.
@@ -45,5 +45,5 @@ class ControlSnake2Action(Action):
         if self._keyboard_service.is_key_down('k'):
             self._direction = Point(0, constants.CELL_SIZE)
         
-        snake = cast.get_first_actor("snakes2")
-        snake.turn_head(self._direction)
+        cycle = cast.get_first_actor("cycles2")
+        cycle.turn_head(self._direction)
