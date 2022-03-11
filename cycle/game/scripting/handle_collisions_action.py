@@ -66,17 +66,21 @@ class HandleCollisionsAction(Action):
 
         player2 = cast.get_first_actor("snake2")
         player2_head = player2.get_segments()[0]
-        player2_segments = player1.get_segments()[1:]
+        player2_segments = player2.get_segments()[1:]
         
 
         # Player 1 segment handling
         for segment in player1_segments:
             if player2_head.get_position().equals(segment.get_position()):
                 self._is_game_over = True
+            if player1_head.get_position().equals(segment.get_position()):
+                self._is_game_over = True
 
         # Player 2 segment handling
         for segment in player2_segments:
             if player1_head.get_position().equals(segment.get_position()):
+                self._is_game_over = True
+            if player2_head.get_position().equals(segment.get_position()):
                 self._is_game_over = True
 
     def _handle_player_collision(self, cast):
@@ -123,7 +127,7 @@ class HandleCollisionsAction(Action):
             for segment in player1_segments:
                 segment.set_color(constants.WHITE)
             
-            for segment in player1_segments:
+            for segment in player2_segments:
                 segment.set_color(constants.WHITE)
     def get_game_over(self):
         return self._is_game_over
